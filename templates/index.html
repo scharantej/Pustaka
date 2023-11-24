@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kannada Reading Website</title>
+</head>
+<body>
+<h1>Kannada Reading Website</h1>
+<ul>
+{% for book in books %}
+<li><a href="/book/{{ book.id }}">{{ book.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
